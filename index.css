@@ -49,286 +49,340 @@ table {
 
 html{
     font-size: 16px;
-    overflow-x: hidden;
 }
 
 body{
-    background-image: url('https://images.unsplash.com/photo-1690046793092-f8d634523264?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: auto;
-    background-position: center;
+    background-image: url('https://images.unsplash.com/photo-1690046793146-dd1cc08ea17d?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
-#sign-up-container{
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
 }
 
-#sign-up-container .first-container{
-    background-image: url('https://images.unsplash.com/photo-1689005047173-b43ff68072ed?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    min-height: 20%;
+#sign-in-container{
+    width: 100vh; 
+    height: 100vh;
+    font-size: 1.3em;
+    font-family: 'Comfortaa', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-grow: 1;
 }
 
-.first-container h1{
-    font-family: 'Ubuntu', sans-serif;
+.container-one{
+    background-image: url('https://images.unsplash.com/photo-1690046793092-f8d634523264?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: top;
+    background-size: cover;
     color: white;
-    letter-spacing: 2px;
-    font-size: 1.8rem;
-    width: 300px;
-    margin: 0rem 1rem;
+    width: 100%;
 }
 
-.second-container{
-    font-family: 'Comfortaa', sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+.container-one h1{
+    max-width: 90%;
+    padding: 4rem 0rem 0rem 0rem;
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container-one p{
+    font-size: 1rem;
+    width: 70%;
+    padding-bottom: 4rem;
+    line-height: 20px;
+    margin: auto;
+}
+
+.container-two{
+    flex-grow: 1;
     background-color: white;
     width: 100%;
-    flex-grow: 2;
 }
 
-.second-container h2{
-    font-size: 3rem;
+.container-two h2{
     font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: #212529;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
-.second-container form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-two p{
+    color: #343a40;
     width: 80%;
+    margin: auto;
+    font-size: 0.8em;
+    padding-bottom: 1rem;
+    line-height: 20px;
 }
 
-form #fullname, #email, #username, #password, #repeat-password{
-    width: 90%;
-    font-size: 2em;
-    border: none;
-    border-bottom: 1.5px solid #343a40;
-    margin-bottom: 1rem;
-}
-
-.second-container input::placeholder{
-    font-size: 0.6em;
-    font-family: 'Comfortaa', sans-serif;
-}
-
-form #fullname, #email, #username, #password, #repeat-password:focus{
-    outline: none;
-}
-
-form #repeat-password{
-    margin-bottom: 1rem;
-}
-
-.second-container #gender{
-    align-self: flex-start;
-    margin-left: 1rem;
-    width: 60%;
-    font-size: 1rem;
-    font-family: 'Comfortaa', sans-serif;
-    margin-bottom: 1rem;
-    border: none;
-    border-bottom: 1.5px solid #343a40;
-}
-
-.second-container #gender:focus{
-    outline: none;
-}
-
-.second-container .checked{
-    align-self: flex-start;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.checked a{
+.container-two a{
     color: #00b4d8;
     text-decoration: none;
 }
 
-form button{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding: 0.8rem 2rem;
+.container-two a:active{
+    color: red;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    color: #343a40;
+}
+
+#inputs .username, .password{
+    border: none;
+    border-bottom: 1.3px solid #343a40;
+    width: 90%;
     font-size: 2em;
+    margin: 1.5rem auto 1.5rem auto;
+    transition: box-shadow 0.3s;
+}
+
+#inputs .username, .password:focus{
+    outline: none;
+}
+
+#inputs .password{
+    margin-bottom: 1rem;
+}
+
+#inputs .username, .password::placeholder{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 2rem;
+}
+
+#inputs .checked{
+    margin-left: 1rem;
+    align-self: flex-start;
+    transition: box-shadow 0.3s;
+}
+
+form button{
     background-color: #00b4d8;
+    font-size: 2rem;
+    padding: 0.8rem 2rem;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 20px;
     border: none;
-    color: whitesmoke;
+    margin-top: 4rem;
+    transition: background-color 0.4s, transform 0.2s ease-in, box-shadow 0.5s;
 }
 
-@media (min-width: 480px) and (max-width: 768px){
-    #sign-up-container h1{
-        font-size: 1.9rem;
-        width: 600px;
+@media (min-width: 481px) and (max-width: 768px){
+    #sign-in-container h1{
+        font-size: 2.8em;
+        width: 500px;
     }
-    .second-container h2{
-        font-size: 3.3rem;
+    .container-one p{
+        font-size: 1.3em;
+        width: 430px;
+        line-height: 1em;
     }
-
-    .second-container #gender{
-        margin-left: 1.5rem;
-        width: 200px;       
+    .container-two p{
+        font-size: 1em;
+        width: 450px;
     }
-    
-    .second-container .checked{
-        margin-left: 1.5rem;
+    #inputs .checked{
+        margin-left: 2rem;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
-    #sign-up-container{
+    body{
+        height: 100vh;
+    }
+    #sign-in-container{
         display: flex;
         flex-direction: row;
+        border: 2px solid red;
+        height: 100%;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
-
-    #sign-up-container .first-container{
-        width: 40%;
+    #sign-in-container .container-one{
         height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 1;
     }
-
-    .first-container h1{
+    .container-one h1{
+        padding: 0;
+        margin: 0;
+        font-size: 2.1em;
+        width: 400px;
+        margin-bottom: 0.5rem;
+    }
+    .container-one p{
+        padding: 0;
+        margin: 0;
         width: 300px;
-        font-size: 2em;
+        font-size: 1.1em;
+        line-height: 35px;
     }
-
-    #sign-up-container .second-container{
-        width: 60%;
-        display: flex;
+    #sign-in-container .container-two{
         height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-grow: 2;
+        align-self: center;
     }
-
-    .second-container #gender{
-        max-width: 40%;
-        margin-left: 1.6rem;
-    }
-
-    .second-container .checked{
-        margin-left: 1.6rem;
+    .container-two p{
+        max-width: 340px;
+        font-size: 0.9em;
+        line-height: 30px;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1279px){
-    #sign-up-container{
+    body{
+        height: 100vh;
+    }
+    #sign-in-container{
         display: flex;
         flex-direction: row;
+        border: 2px solid red;
+        height: 100%;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
-
-    #sign-up-container .first-container{
-        width: 40%;
+    #sign-in-container .container-one{
         height: 100%;
+        width: 50%;
         display: flex;
-    }
-
-    .first-container h1{
-        width: 400px;
-        font-size: 2em;
-    }
-
-    #sign-up-container .second-container{
-        display: flex;
-        height: 100%;
-        width: 60%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
         justify-content: center;
-        flex-grow: 2;
+        flex-shrink: 1;
     }
-
-    .second-container h2{
-        font-size: 4em;
+    .container-one h1{
+        padding: 0;
+        margin: 0;
+        font-size: 2.8em;
+        width: 600px;
+        margin-bottom: 0.5rem;
     }
-
-    .second-container #gender{
-        margin-left: 1.6rem;
-        max-width: 40%;
+    .container-one p{
+        padding: 0;
+        margin: 0;
+        width: 400px;
+        font-size: 1.1em;
+        line-height: 35px;
     }
-
-    .second-container .checked{
-        margin-left: 1.6rem;
+    #sign-in-container .container-two{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .container-two p{
+        max-width: 400px;
+        font-size: 0.9em;
+        line-height: 30px;
+    }
+    #inputs .remember{
+        margin-left: 0.8rem;
     }
 }
 
 @media (min-width: 1280px){
     body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100vh;
     }
-
-    #sign-up-container{
+    #sign-in-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
         width: 80%;
         height: 80%;
         border-radius: 30px;
         overflow: hidden;
     }
 
-    #sign-up-container .first-container{
-        width: 40%;
+    #sign-in-container .container-one{
         height: 100%;
-    }
-
-    .first-container h1{
-        font-size: 2.3em;
-        width: 500px;
-    }
-
-    #sign-up-container .second-container{
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 1;
+        max-width: 50%;
+    }
+
+    .container-one h1{
+        margin: 0.3rem;
+        padding: 0;
+        font-size: 2.9em;
+        width: 550px;
+    }
+
+    .container-one p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.3em;
+        line-height: 2rem;
+        width: 450px;
+    }
+    #sign-in-container .container-two{
         height: 100%;
+        width: 80%;
+        flex-grow: 2;
+    }
+    #inputs .username, .password::placeholder{
+        font-size: 1.5rem;
+    }
+    .container-two a:hover{
+        color: red;
+    }
+    
+    .container-two a:active{
+        color: blue;
     }
 
-    .second-container h2{
-        margin-bottom: 0.5em;
+    #inputs .username:focus, .password:focus{
+        box-shadow: 0px 5px 5px #90e0ef;
     }
 
-    form #fullname, #email, #username, #password, #repeat-password{
-        font-size: 1.8em;
+    #inputs .remember{
+        margin-left: 0.6rem;
     }
 
-    .second-container #gender{
-        margin-left: 1.5rem;
+    #inputs .checked:focus{
+        box-shadow: 0px 3px 5px #90e0ef;
+    }
+    
+    form button:hover{
+        background-color: #0077b6;
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 0px 4px 3px #90e0ef;
     }
 
-    .second-container .checked{
-        margin-left: 1.5rem;
-        margin-bottom: 0rem;
-    }
-
-    .second-container button{
-        margin-bottom: 1rem;
-        font-size: 1.5em;
+    form button:active{
+        transform: scale(1);
+        box-shadow: none;
     }
 }

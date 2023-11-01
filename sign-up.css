@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1690046793092-f8d634523264?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#sign-up-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#sign-up-container .first-container{
+    background-image: url('https://images.unsplash.com/photo-1689005047173-b43ff68072ed?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.first-container h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    width: 300px;
+    margin: 0rem 1rem;
+}
+
+.second-container #sign-in{
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+#sign-up-container .first-container a:first-child{
+    text-decoration: none;
+    color: red;
+}
+
+.second-container{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    flex-grow: 2;
+}
+
+.second-container h2{
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #212529;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.second-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+form #fullname, #email, #username, #password, #repeat-password{
+    width: 90%;
+    font-size: 2em;
+    border: none;
+    border-bottom: 1.5px solid #343a40;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.5s;
+}
+
+.second-container input::placeholder{
+    font-size: 0.6em;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+form #fullname, #email, #username, #password, #repeat-password:focus{
+    outline: none;
+}
+
+form #repeat-password{
+    margin-bottom: 1rem;
+}
+
+.second-container #gender{
+    align-self: flex-start;
+    margin-left: 1rem;
+    width: 60%;
+    font-size: 1rem;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1.5px solid #343a40;
+}
+
+.second-container #gender:focus{
+    outline: none;
+}
+
+.second-container .checked{
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checked a{
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.checked a:active{
+    color: red;
+}
+
+form button{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 2em;
+    background-color: #00b4d8;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 20px;
+    border: none;
+    color: whitesmoke;
+    transition: background-color 0.4s, transform 0.2s ease-in, box-shadow 0.5s;
+}
+
+
+
+@media (min-width: 480px) and (max-width: 768px){
+    #sign-up-container h1{
+        font-size: 1.9rem;
+        width: 600px;
+    }
+    .second-container h2{
+        font-size: 3.3rem;
+    }
+
+    .second-container #gender{
+        margin-left: 1.5rem;
+        width: 200px;       
+    }
+    
+    .second-container .checked{
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #sign-up-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sign-up-container .first-container{
+        width: 40%;
+        height: 100%;
+        flex-shrink: 1;
+    }
+
+    .first-container h1{
+        width: 300px;
+        font-size: 2em;
+    }
+
+    #sign-up-container .second-container{
+        width: 60%;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-grow: 2;
+    }
+
+    .second-container h2{
+        font-size: 4em;
+    }
+
+    .second-container #gender{
+        max-width: 40%;
+        margin-left: 1.6rem;
+    }
+
+    .second-container .checked{
+        margin-left: 1.6rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px){
+    #sign-up-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sign-up-container .first-container{
+        width: 40%;
+        height: 100%;
+        display: flex;
+    }
+
+    .first-container h1{
+        width: 400px;
+        font-size: 2em;
+    }
+
+    #sign-up-container .second-container{
+        display: flex;
+        height: 100%;
+        width: 60%;
+        justify-content: center;
+        flex-grow: 2;
+    }
+
+    .second-container h2{
+        font-size: 4em;
+    }
+
+    .second-container #gender{
+        margin-left: 1.6rem;
+        max-width: 40%;
+    }
+
+    .second-container .checked{
+        margin-left: 1.6rem;
+    }
+}
+
+@media (min-width: 1280px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sign-up-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        width: 80%;
+        height: 80%;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    #sign-up-container .first-container{
+        width: 40%;
+        height: 100%;
+    }
+
+    .first-container h1{
+        font-size: 2.3em;
+        width: 500px;
+    }
+
+    #sign-up-container .second-container{
+        width: 60%;
+        height: 100%;
+    }
+
+    .second-container h2{
+        margin-bottom: 0.5em;
+    }
+
+    form #fullname, #email, #username, #password, #repeat-password{
+        font-size: 1.8em;
+    }
+
+    form #fullname:focus, #email:focus, #username:focus, #password:focus, #repeat-password:focus{
+        box-shadow: 0px 5px 5px #90e0ef;
+    }
+
+    .second-container #gender{
+        margin-left: 1.5rem;
+        width: 40%;
+    }
+
+    .second-container .checked{
+        margin-left: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .second-container button{
+        margin-bottom: 1rem;
+        font-size: 1.5em;
+    }
+
+    form button:hover{
+        background-color: #0077b6;
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 0px 4px 3px #90e0ef;
+    }
+
+    form button:active{
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create your account today on PicsNow</title>
+    <title>Welcome to PicsNow</title>
     <link rel="stylesheet" href="index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Pacifico&family=Ubuntu:wght@700&display=swap"
@@ -11,61 +11,45 @@
     />
   </head>
   <body>
-    <div id="sign-up-container">
-      <div class="first-container">
-        <h1>Create your account today</h1>
+    <div id="sign-in-container">
+      <div class="container-one">
+        <h1>Welcome back!</h1>
+        <p>You can sign in with your profile to access my creations</p>
       </div>
-      <div class="second-container">
-        <h2>Sign Up</h2>
-        <form action="sign-up-data">
-          <input
-            type="text"
-            name="fullname"
-            id="fullname"
-            minlength="6"
-            placeholder="Full name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            minlength="6"
-            placeholder="Email address"
-          />
-          <input
-            type="text"
-            name="username"
-            id="username"
-            minlength="6"
-            placeholder="Username"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            id="password"
-            required
-          />
-          <input
-            type="password"
-            name="repeated-password"
-            id="repeat-password"
-            placeholder="Repeat password"
-            required
-          />
-          <select name="gender" id="gender" required>
-            <option value="#">Select your gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-          <div class="checked">
-            <input type="checkbox" name="checked" id="checked" required>
-            <label for="checked">I agree to the <a href="#">Terms of User</a></label>
-          </div>
-          <button>Sign Up</button>
-        </form>
+      <div class="container-two">
+        <h2>Sign In</h2>
+          <form action="sing-in-data">
+            <p>
+              Please enter your login information or
+              <a href="sign-up.html">click here</a> to
+              registration
+            </p>
+            <div id="inputs">
+              <input
+              type="text"
+              name="username"
+              class="username"
+              placeholder="Username"
+              minlength="5"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              class="password"
+              placeholder="Password"
+              minlength="6"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required
+            />
+            <div class="remember">
+              <input type="checkbox" name="remember" class="checked"/>
+              <label for="remember">Remember me</label>
+            </div>
+            </div>
+            <button>Log In</button>
+          </form>
       </div>
     </div>
   </body>
