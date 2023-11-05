@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+nav ul{
+    display: none;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    width: 40%;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+#logo h1{
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 2em;
+    color: #00b4d8;
+}
+
+nav button{
+    border: none;
+    margin-right: 1rem;
+}
+
+nav button img{
+    width: 40px;
+    height: 60px;
+}
+
+#plane-container{
+    background-image: url('https://images.unsplash.com/photo-1531045535792-b515d59c3d1f?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    min-width: 240px;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#plane-container p{
+    font-family: 'Comfortaa';
+    font-size: 1.5em;
+    line-height: 30px;
+    max-width: 400px;
+    min-width: 200px;
+    color: whitesmoke;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    opacity: 100%;
+    text-transform: uppercase;
+}
+
+main #section-one{
+    text-align: center;
+    min-width: 240px;
+    background-color: #90e0ef;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#section-one h2{
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#section-one button{
+    background-color: transparent;
+    font-size: 1em;
+    color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', sans-serif;
+    border: 1.5px solid #212529;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+#section-one button:active{
+    transform: scale(0.9);
+    background-color: white;
+    color: #212529;
+    border: none; 
+}
+
+#section-two{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b4d8;
+    position: relative;
+    min-width: 240px;
+}
+
+#section-two h3{
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    letter-spacing: 2px;
+    max-width: 400px;
+    color: #212529;
+}
+
+#section-two .destination{
+    width: 100%;
+}
+
+#section-two img{
+    width: 100%;
+    transition: all 1s ease-in;
+    margin: 0;
+}
+
+#section-two:hover img{
+    transform: scale(0.9);
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid black;
+}
+
+#section-two p{
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transition: 1s;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+#section-two:hover p{
+    opacity: 1;
+}
+
+.destination:last-child p{
+    margin-bottom: 0.7rem;
+}
+
+#section-three{
+    background-image: url('https://images.unsplash.com/photo-1490358930084-2d26f21dc211?auto=format&fit=crop&q=80&w=2532&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: top;
+    margin-top: 0rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    min-width: 210px;
+}
+
+#section-three h4{
+    font-size: 1.5em;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #212529;
+}
+
+#section-three p{
+    font-size: 1.5em;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+#section-three button{
+    font-size: 1em;
+    background-color: transparent;
+    border: 1.5px solid #212529;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 0.5rem 0.8rem;
+    color: #212529;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s, color 0.2s, border 0.1s;
+    font-weight: bold;
+}
+
+#section-three button:active{
+    transform: scale(0.9);
+    background-color: white;
+    color: #212529;
+    border: none;    
+}
+
+#section-four{
+    background-color: #0077b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 243px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+#section-four h5{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    color: #dee2e6;
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+#section-four:hover h5{
+    opacity: 1;
+    transition: 1s;
+}
+
+#section-four img{
+    width: 100%;
+}
+
+.activity:first-child img{
+    transform: scale(0);
+}
+
+#activities-container .activity:nth-of-type(2) img{
+    transform: translateX(500px);
+}
+
+#activities-container .activity:last-child img{
+    transform: translateX(-500px);
+}
+
+#section-four:hover img:first-child{
+    transform: scale(1);
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+#section-four:hover .activity:nth-of-type(2) img{
+    transition: 1s;
+    transition-delay: 2.5s;
+}
+
+#section-four:hover .activity:last-child img{
+    transition: 1s;
+    transition-delay: 4s;
+}
+
+#section-four p{
+    font-size: 1.5em;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 1rem 0.5rem;
+    color: #dee2e6;
+    opacity: 0;
+}
+
+#section-four:hover .activity:first-child p{
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 2s;
+}
+
+#section-four:hover .activity:nth-last-of-type(2) p{
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 3.5s;
+}
+
+#section-four:hover .activity:last-child p{
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 5.2s;
+}
+
+footer{
+    background-color: #0b132b;
+    color: #dee2e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    min-width: 243px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer h6{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.2rem 0.5rem 1rem 0.5rem;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer p{
+    font-size: 1.2em;
+    margin: 1rem;
+}
